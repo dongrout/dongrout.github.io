@@ -9,16 +9,15 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="stylesheet" href="http://meyerweb.com/eric/tools/css/reset/reset.css">
-
+	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/resume.css">
 </head>
 <body id="top">
 
 <nav>
 	<a class="tag" href="resume.htm">Full Resume</a>
-	<a class="tag" href="resume_autocad.htm">AutoCAD Developer</a>
 	<a class="tag" href="resume_unity.htm">Unity Developer</a>
+	<a class="tag" href="resume_autocad.htm">AutoCAD Developer</a>
 	<a class="tag" href="resume_software.htm">Software Developer</a>
 </nav>
 
@@ -67,10 +66,10 @@
 	</header>
 
 	<div class="cell_container">
-		<section class="portfolio cell">
+		<section class="portfolio cell_half">
 			<div class="above"><h2 class="section-title">Portfolio</h2></div>
 			<div class="section-content below">
-				<ul>
+				<ul class="bulleted">
 					<li><a href="#Website_Developer">Website Developer</a></li>
 					<li><a href="#Games_Developer">Games Developer</a></li>
 				</ul>
@@ -78,23 +77,22 @@
 		</section>
 
 		<!-- https://hr.od.nih.gov/workingatnih/competencies/proficiencyscale.htm -->
-		<section class="experience cell">
+		<section class="experience cell_half cell_right">
 			<div class="above"><h2 class="section-title">Experience</h2></div>
 			<div class="section-content below">
-				<ul>
-					<li><strong>HTML,</strong> Intermediate</li>
-					<li><strong>CSS,</strong> Intermediate</li>
-					<li><strong>Bootstrap,</strong> Novice</li>
-					<li><strong>Javascript,</strong> Intermediate</li>
-					<li><strong>Joomla,</strong> Intermediate</li>
+				<ul class="bulleted">
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>Bootstrap</li>
+					<li>Javascript</li>
+					<li>Joomla</li>
 				</ul>
 			</div>
 		</section>
+	</div>
 
-		<section class="static_map cell">
-		</section>
-
-		<section class="cell availability">
+	<div class="cell_container">
+		<section class="availability cell_half">
 			<div class="above"><h2 class="section-title">Availability</h2></div>
 			<div class="section-content below">
 				<ul class="bulleted">
@@ -104,59 +102,25 @@
 			</div>
 		</section>
 
-		<section class="environment cell">
-			<div class="above"><h2 class="section-title">Preferred Environment</h2></div>
+		<section class="skills cell_half cell_right">
+			<div class="above"><h2 class="section-title">Skills</h2></div>
 			<div class="section-content below">
 				<ul class="bulleted">
-					<li>Google Chrome</li>
-					<li>Windows</li>
+					<li>Attention to detail</li>
+					<li>Problem-solving &amp; critical thinking</li>
+					<li>Adaptable &amp; flexible with a readiness to learn</li>
+					<li>Work in a team or independently</li>
 				</ul>
 			</div>
 		</section>
 
-		<section class="the_most_amazing cell">
+		<section class="the_most_amazing cell_full">
 			<div class="above"><h2 class="section-title">The Most Amazing...</h2></div>
 			<div class="section-content below">
-				<p><img class="quote" src="images/quote-open.png" />... software I develop involves graphical elements that the user can interact with.<img class="quote" src="images/quote-close.png" /></p>
+				<p><center>... software I develop involves graphical elements that the user can interact with.</center></p>
 			</div>
 		</section>
 	</div>
-
-	<section id="highlights_of_professional_qualifications" style="page-break-inside: avoid;">
-		<div class="left"><h2 class="section-title">Highlights of Professional Qualifications</h2></div>
-		<div class="section-content right">
-			<ul>
-				<li>
-					<div class="content-details">
-					<ul class="bulleted">
-						<li style="page-break-inside: avoid;">Ability to plan, prioritize and implement activities</li>
-						<li style="page-break-inside: avoid;">A keen eye and attention to the smallest details</li>
-						<li style="page-break-inside: avoid;">Excellent team skills, able to work independently or in groups</li>
-						<li style="page-break-inside: avoid;">Enthusiastic to learn and face new challenges</li>
-					</ul>
-					</div>
-				</li>
-				<li>
-					<h3 class="content-title">Programming Languages and Interfaces</h3>
-					<div class="content-details">
-					<ul class="bulleted">
-						<li style="page-break-inside: avoid;">Creation of web sites using HTML, CSS, JavaScript, Bootstrap, PHP 2.1 and Joomla</li>
-					</ul>
-					</div>
-				</li>
-				<li>
-					<h3 class="content-title">Software Applications</h3>
-					<div class="content-details">
-					<ul class="bulleted">
-						<li style="page-break-inside: avoid;">Joomla 1.5 - building and managing websites</li>
-						<li style="page-break-inside: avoid;">Adobe Photoshop CS6 - image editing software</li>
-						<li style="page-break-inside: avoid;">GNU Image Manipulation Program 2.8 - image editing software</li>
-					</ul>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</section>
 
 	<section id="professional_roles" style="page-break-inside: avoid;">
 		<div class="left"><h2 class="section-title">Professional Roles</h2></div>
@@ -180,14 +144,19 @@
 				</li>
 				<li style="page-break-inside: avoid;">
 					<h3 id="Games_Developer" class="content-title">Games Developer</h3>
+					<p>These are some game that I've personally developed and posted on <a href= "https://dgsoftware.itch.io/" target="_blank">dgsoftware.itch.io</a></p>
 					<div class="content-details">
 					<ul class="bulleted">
-						<li style="page-break-inside: avoid;">Developing 2D, 3D &amp; VR games using the Unity cross-platform game engine</li>
-						<li style="page-break-inside: avoid;">Developing games from scratch using OpenGL in a Windows application</li>
-						<li style="page-break-inside: avoid;">Developing games using OpenGL within an Android app</li>
-						<li style="page-break-inside: avoid;">Writing the OpenGL code so that it is almost identical between a Windows C# application and an Android Java app to create games that function nearly the same on both systems</li>
-						<li style="page-break-inside: avoid;">Using the Unity game development engine to create games and export them to Windows, Android and Web based systems</li>
-						<li style="page-break-inside: avoid;">In the past used the Conitec 3D GameStudio engine to create games</li>
+						<li style="page-break-inside: avoid;"><a href="https://dgsoftware.itch.io/ballz-alike" target="_blank"><strong>Ballz-alike</strong></a> - Launch balls to break falling bricks. Inspired by the game <a href="https://play.google.com/store/apps/details?id=com.ketchapp.ballz&hl=en_CA" target="_blank">Ballz by Ketchapp</a>.</li>
+						<li style="page-break-inside: avoid;"><a href="https://dgsoftware.itch.io/voxel-invaders" target="_blank"><strong>Voxel Invaders</strong></a> - Space Invaders clone where everything is made up of voxel cubes.</li>
+						<li style="page-break-inside: avoid;"><a href="https://dgsoftware.itch.io/versus-2d2pg" target="_blank"><strong>Versus 2D2PG</strong></a> - Collection of 2D games for 2 players and playable with gamepad controllers.</li>
+						<li style="page-break-inside: avoid;"><a href="https://dgsoftware.itch.io/shooting-gallery" target="_blank"><strong>Shooting Gallery</strong></a> - Fun little shooting gallery. Also available in <a href="https://dgsoftware.itch.io/shooting-gallery-vr" target="_blank">VR on the Quest</a>.</li>
+						<li style="page-break-inside: avoid;"><a href="https://dgsoftware.itch.io/asteroids" target="_blank"><strong>Asteroids</strong></a> - Asteroids clone where everything is made up of vector lines.</li>
+						<li style="page-break-inside: avoid;"><a href="https://dgsoftware.itch.io/worst-tetris-ever" target="_blank"><strong>Worst Tetris Every</strong></a> - Tetris clone made for <a href="https://ldjam.com/events/ludum-dare/40" target="_blank">Ludum Dare 40 - The more you have, the worse it is</a>.</li>
+						<li style="page-break-inside: avoid;"><a href="https://dgsoftware.itch.io/breakout" target="_blank"><strong>Breakout</strong></a> - Classic Breakout clone where you bounce a ball to destroy bricks.</li>
+						<li style="page-break-inside: avoid;"><a href="https://dgsoftware.itch.io/diamond-mine" target="_blank"><strong>Diamond Mine</strong></a> - Diamond Mine clone where you match diamonds in 3's to destroy them.</li>
+						<li style="page-break-inside: avoid;"><a href="https://dgsoftware.itch.io/rc-arena" target="_blank"><strong>RC Arena</strong></a> - Race RC cars around an office environment in 2 player, split-screen action.</li>
+						<li style="page-break-inside: avoid;"><a href="https://dgsoftware.itch.io/pong" target="_blank"><strong>Pong</strong></a> - Classic pong clone where 2 players battle head-to-head.</li>
 					</ul>
 					</div>
 				</li>
@@ -201,39 +170,39 @@
 			<table class="history">
 				<tr><th class="history-title" colspan="2">ICOM Productions</th></tr>
 				<tr><td class="history-subtitle">Unity &amp; Unreal VR Developer</td>
-				<td class="history-dates"><p>Nov&nbsp;2018 to Present</p>
-				<p>May&nbsp;2018 to Jun&nbsp;2018</p>
+				<td class="history-dates"><p>Nov&nbsp;2018&nbsp;to&nbsp;Apr&nbsp;2020</p>
+				<p>May&nbsp;2018&nbsp;to&nbsp;Jun&nbsp;2018</p>
 				<p class="history-location">Calgary, AB</p></td></tr>
 			</table>
 			<table class="history">
 				<tr><th class="history-title" colspan="2">Picture This Today</th></tr>
 				<tr><td class="history-subtitle">Unity 3D Developer</td>
-				<td class="history-dates"><p>May&nbsp;2018 to Aug&nbsp;2019</p>
-				<p>Apr&nbsp;2017 to Sept&nbsp;2017</p>
-				<p class="history-location">Calgary, AB</p></td></tr>
+				<td class="history-dates"><p>May&nbsp;2018&nbsp;to&nbsp;Aug&nbsp;2019</p>
+				<p>Apr&nbsp;2017&nbsp;to&nbsp;Sept&nbsp;2017</p>
+				<p class="history-location">Victoria, BC</p></td></tr>
 			</table>
 			<table class="history">
 				<tr><th class="history-title" colspan="2">Integrated Geomatics</th></tr>
 				<tr><td class="history-subtitle">AutoCAD Software Developer</td>
-				<td class="history-dates"><p>Jan&nbsp;2017 to Jun&nbsp;2018</p>
+				<td class="history-dates"><p>Jan&nbsp;2017&nbsp;to&nbsp;Jun&nbsp;2018</p>
 				<p class="history-location">Calgary, AB</p></td></tr>
 			</table>
 			<table class="history">
 				<tr><th class="history-title" colspan="2">University of Calgary Ballroom Dance Club</th></tr>
 				<tr><td class="history-subtitle">Website Developer</td>
-				<td class="history-dates"><p>Oct&nbsp;2016 to May&nbsp;2018</p>
+				<td class="history-dates"><p>Oct&nbsp;2016&nbsp;to&nbsp;May&nbsp;2018</p>
 				<p class="history-location">Calgary, AB</p></td></tr>
 			</table>
 			<table class="history">
 				<tr><th class="history-title" colspan="2">Accalia Accounting Ltd.</th></tr>
 				<tr><td class="history-subtitle">Microsoft Windows Developer</td>
-				<td class="history-dates"><p>Jun&nbsp;2016 to Aug&nbsp;2016</p>
+				<td class="history-dates"><p>Jun&nbsp;2016&nbsp;to&nbsp;Aug&nbsp;2016</p>
 				<p class="history-location">Calgary, AB</p></td></tr>
 			</table>
 			<table class="history">
 				<tr><th class="history-title" colspan="2">Vista-Mustang JV Corporation</th></tr>
 				<tr><td class="history-subtitle">Website Developer</td>
-				<td class="history-dates"><p>Nov&nbsp;2015 to Feb&nbsp;2018</p>
+				<td class="history-dates"><p>Nov&nbsp;2015&nbsp;to&nbsp;Feb&nbsp;2018</p>
 				<p class="history-location">Calgary, AB</p></td></tr>
 			</table>
 			<table class="history">
@@ -245,31 +214,31 @@
 			<table class="history">
 				<tr><th class="history-title" colspan="2">Vista-Mustang JV Corporation</th></tr>
 				<tr><td class="history-subtitle">AutoCAD Systems Management &amp; Support, AutoCAD &amp; Windows Software Developer, and Website Developer</td>
-				<td class="history-dates"><p>Nov&nbsp;2009 to Nov&nbsp;2015</p>
+				<td class="history-dates"><p>Nov&nbsp;2009&nbsp;to&nbsp;Nov&nbsp;2015</p>
 				<p class="history-location">Calgary, AB</p></td></tr>
 			</table>
 			<table class="history">
 				<tr><th class="history-title" colspan="2">Shok Dance</th></tr>
 				<tr><td class="history-subtitle">Website Developer</td>
-				<td class="history-dates"><p>Sep&nbsp;2013 &amp; May to Jun&nbsp;2010</p>
+				<td class="history-dates"><p>Sep&nbsp;2013 &amp; May&nbsp;to&nbsp;Jun&nbsp;2010</p>
 				<p class="history-location">Calgary, AB</p></td></tr>
 			</table>
 			<table class="history">
 				<tr><th class="history-title" colspan="2">Wood Group Mustang / IMV Projects Inc.</th></tr>
 				<tr><td class="history-subtitle">AutoCAD Systems Management &amp; Support, and AutoCAD Software Developer</td>
-				<td class="history-dates"><p>Dec&nbsp;2007 to May&nbsp;2009</p>
+				<td class="history-dates"><p>Dec&nbsp;2007&nbsp;to&nbsp;May&nbsp;2009</p>
 				<p class="history-location">Calgary, AB</p></td></tr>
 			</table>
 			<table class="history">
 				<tr><th class="history-title" colspan="2">Upside Engineering</th></tr>
 				<tr><td class="history-subtitle">AutoCAD Systems Management &amp; Support</td>
-				<td class="history-dates"><p>Feb&nbsp;2006 to Dec&nbsp;2007</p>
+				<td class="history-dates"><p>Feb&nbsp;2006&nbsp;to&nbsp;Dec&nbsp;2007</p>
 				<p class="history-location">Calgary, AB</p></td></tr>
 			</table>
 			<table class="history">
 				<tr><th class="history-title" colspan="2">Cimarron Engineering</th></tr>
 				<tr><td class="history-subtitle">AutoCAD Systems Management &amp; Support</td>
-				<td class="history-dates"><p>Oct&nbsp;2005 to Jan&nbsp;2006</p>
+				<td class="history-dates"><p>Oct&nbsp;2005&nbsp;to&nbsp;Jan&nbsp;2006</p>
 				<p class="history-location">Calgary, AB</p></td></tr>
 			</table>
 			<table class="history">
@@ -287,25 +256,25 @@
 			<table class="history">
 				<tr><th class="history-title" colspan="2">Android Developer</th></tr>
 				<tr><td class="history-subtitle">Udacity</td>
-				<td class="history-dates"><p>Dec&nbsp;2016 to Feb&nbsp;2017</p>
+				<td class="history-dates"><p>Dec&nbsp;2016&nbsp;to&nbsp;Feb&nbsp;2017</p>
 				<p class="history-location">Online</p></td></tr>
 			</table>
 			<table class="history">
 				<tr><th class="history-title" colspan="2">Web Design for Everybody (Basics of Web Development and Coding)</th></tr>
 				<tr><td class="history-subtitle">Coursera</td>
-				<td class="history-dates"><p>Jul&nbsp;2016 to Aug&nbsp;2016</p>
+				<td class="history-dates"><p>Jul&nbsp;2016&nbsp;to&nbsp;Aug&nbsp;2016</p>
 				<p class="history-location">Online</p></td></tr>
 			</table>
 			<table class="history">
 				<tr><th class="history-title" colspan="2">Software Product Management</th></tr>
 				<tr><td class="history-subtitle">Coursera</td>
-				<td class="history-dates"><p>Feb&nbsp;2016 to May&nbsp;2016</p>
+				<td class="history-dates"><p>Feb&nbsp;2016&nbsp;to&nbsp;May&nbsp;2016</p>
 				<p class="history-location">Online</p></td></tr>
 			</table>
 			<table class="history">
 				<tr><th class="history-title" colspan="2">Programming Mobile Applications for Android Handheld Systems</th></tr>
 				<tr><td class="history-subtitle">Coursera</td>
-				<td class="history-dates"><p>Jul&nbsp;2015 to Aug&nbsp;2015</p>
+				<td class="history-dates"><p>Jul&nbsp;2015&nbsp;to&nbsp;Aug&nbsp;2015</p>
 				<p class="history-location">Online</p></td></tr>
 			</table>
 			<table class="history">
@@ -317,19 +286,19 @@
 			<table class="history">
 				<tr><th class="history-title" colspan="2">Computer Science Courses</th></tr>
 				<tr><td class="history-subtitle">Athabasca University</td>
-				<td class="history-dates"><p>Oct&nbsp;1998 to Jun&nbsp;2001</p>
+				<td class="history-dates"><p>Oct&nbsp;1998&nbsp;to&nbsp;Jun&nbsp;2001</p>
 				<p class="history-location">Calgary, AB</p></td></tr>
 			</table>
 			<table class="history">
 				<tr><th class="history-title" colspan="2">An Intro to Programming in C</th></tr>
 				<tr><td class="history-subtitle">Saskatchewan Institute of Applied Science &amp; Technology</td>
-				<td class="history-dates"><p>Oct&nbsp;1992 to Dec&nbsp;1992</p>
+				<td class="history-dates"><p>Oct&nbsp;1992&nbsp;to&nbsp;Dec&nbsp;1992</p>
 				<p class="history-location">Saskatoon, SK</p></td></tr>
 			</table>
 			<table class="history">
 				<tr><th class="history-title" colspan="2">Computer Aided Design &amp; Manufacturing Engineering Technology</th></tr>
 				<tr><td class="history-subtitle">Saskatchewan Institute of Applied Science &amp; Technology</td>
-				<td class="history-dates"><p>Sept&nbsp;1987 to May&nbsp;1989</p>
+				<td class="history-dates"><p>Sept&nbsp;1987&nbsp;to&nbsp;May&nbsp;1989</p>
 				<p class="history-location">Saskatoon, SK</p></td></tr>
 			</table>
 		</div>
@@ -350,7 +319,7 @@
 		<div class="alignleft">
 			<p><a href="https://dongrout.github.io/resume_website.htm">https://dongrout.github.io/resume_website.htm</a></p>
 		</div>
-		<p class="alignright">2020&#8209;01&#8209;12</p>
+		<p class="alignright">2020&#8209;06&#8209;29</p>
 		<div style="clear: both;"></div>
 	</footer>
 </main>
