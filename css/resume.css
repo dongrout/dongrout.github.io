@@ -2,8 +2,8 @@
 
 body {
   background: #365d97;
-  color: #808080;
-  font-family: Arial, sans-serif;
+  color: #404040;
+  font-family: Lato, Arial, Helvetica, sans-serif;
 }
 @media (max-width: 660px), print {
   body {
@@ -28,6 +28,14 @@ main {
   }
 }
 
+p + p {
+  margin-top: 0.6em;
+}
+
+.history p {
+  margin-top: 0;
+}
+
 /************************************************************************/
 
 nav {
@@ -48,7 +56,7 @@ nav > .tag {
 /************************************************************************/
 
 header {
-  padding: 2.1rem;
+  padding: 2.1rem 2.1rem 0rem;
 }
 @media (max-width: 930px) {
   header {
@@ -95,20 +103,33 @@ header > .right {
 
 .header-name {
   color: #3863a0;
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 .header-title {
-  color: #3863a0;
-  font-size: 1rem;
+  color: #606060;
+  font-size: 1.5rem;
   font-weight: 700;
+  text-transform: uppercase;
+}
+
+sub {
+  font-size: 0.75em;
 }
 
 .profile_photo {
-  width: 100%;
+  width: 160px;
+  height: 160px;
   border-radius: 5px;
 }
+@media print {
+  .profile_photo {
+    filter: grayscale(100%);
+  }
+}
+
 
 #contactDetails {
   width: 100%;
@@ -171,23 +192,49 @@ tr:last-child td {
   flex-wrap: wrap;
 }
 
+.cell_right {
+  border-right: 0;
+}
+
+.cell_quarter {
+  display: block;
+  box-sizing: border-box;
+  flex-basis: 25%;
+}
+
+.cell_third {
+  display: block;
+  box-sizing: border-box;
+  flex-basis: 33%;
+}
+
 .cell_half {
   display: block;
   box-sizing: border-box;
   flex-basis: 50%;
-  border-right: 2px solid #e2ebf5;
 }
-.cell_right {
-  border-right: 0;
+
+.cell_two_thirds {
+  display: block;
+  box-sizing: border-box;
+  flex-basis: 67%;
 }
+
+.cell_three_quarters {
+  display: block;
+  box-sizing: border-box;
+  flex-basis: 75%;
+}
+
 .cell_full {
   display: block;
   box-sizing: border-box;
   flex-basis: 100%;
 }
+
 @media print {
   .cell_half {
-    border-right: 2px solid #808080;
+    border-right: 2px solid #b0b0b0;
   }
   .cell_right {
     border-right: 0;
@@ -196,8 +243,28 @@ tr:last-child td {
 
 /************************************************************************/
 
+.border_top { border-top: 2px solid #b0b0b0; }
+.border_left { border-left: 2px solid #b0b0b0; }
+.border_right { border-right: 2px solid #b0b0b0; }
+.border_bottom { border-bottom: 2px solid #b0b0b0; }
+
+/* https://stackoverflow.com/questions/29291798/how-can-i-create-a-border-in-the-middle-of-the-div-horizontally */
+.border-center {
+	width: 100%;
+	height: 30px;
+	position: relative;
+}
+.border-center:before {
+	content: '';
+	position: absolute;
+	bottom: 50%;
+	border-bottom: 2px solid #b0b0b0;
+	width: 100%;
+	z-index:0;
+}
+		
+/************************************************************************/
 section {
-  border-top: 2px solid #e2ebf5;
   display: flex;
   padding: 2.1rem;
   box-sizing: border-box;
@@ -528,7 +595,7 @@ footer time {
   }
 
   .tag {
-    border: 1px solid #808080;
+    border: 1px solid #b0b0b0;
     background-color: #ffffff;
     color: #000000;
   }
@@ -548,7 +615,7 @@ footer time {
   }
 
   .cell {
-    border-right-color: #808080;
+    border-right-color: #b0b0b0;
   }
 
   .cell {
@@ -556,7 +623,7 @@ footer time {
   }
 
   section {
-    border-top-color: #808080;
+    border-top-color: #b0b0b0;
   }
 
   section.static_map {
