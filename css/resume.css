@@ -36,6 +36,18 @@ p + p {
   margin-top: 0;
 }
 
+.only-mobile {
+	visibility: hidden;
+	display: none;
+}
+
+@media (max-width: 520px) {
+	.only-mobile {
+		visibility: visible;
+		display: initial;
+	}
+}
+
 /************************************************************************/
 
 nav {
@@ -230,6 +242,14 @@ tr:last-child td {
   display: block;
   box-sizing: border-box;
   flex-basis: 100%;
+}
+
+@media (max-width: 520px) {
+  .cell_quarter { flex-basis: 100%; }
+  .cell_third { flex-basis: 100%; }
+  .cell_half { flex-basis: 100%; }
+  .cell_two_thirds { flex-basis: 100%; }
+  .cell_three_quarters { flex-basis: 100%; }
 }
 
 @media print {
