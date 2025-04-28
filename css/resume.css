@@ -142,6 +142,17 @@ sub {
   }
 }
 
+.profile_photo_small {
+  width: 140px;
+  height: 140px;
+  border-radius: 5px;
+}
+@media print {
+  .profile_photo_small {
+    filter: grayscale(100%);
+  }
+}
+
 
 #contactDetails {
   width: 100%;
@@ -236,6 +247,12 @@ tr:last-child td {
   display: block;
   box-sizing: border-box;
   flex-basis: 75%;
+}
+
+.cell_three_eights {
+  display: block;
+  box-sizing: border-box;
+  flex-basis: 37.5%;
 }
 
 .cell_full {
