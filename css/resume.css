@@ -219,6 +219,12 @@ tr:last-child td {
   border-right: 0;
 }
 
+.cell_one_eight {
+  display: block;
+  box-sizing: border-box;
+  flex-basis: 12.5%;
+}
+
 .cell_quarter {
   display: block;
   box-sizing: border-box;
@@ -231,10 +237,22 @@ tr:last-child td {
   flex-basis: 33%;
 }
 
+.cell_three_eights {
+  display: block;
+  box-sizing: border-box;
+  flex-basis: 37.5%;
+}
+
 .cell_half {
   display: block;
   box-sizing: border-box;
   flex-basis: 50%;
+}
+
+.cell_five_eights {
+  display: block;
+  box-sizing: border-box;
+  flex-basis: 62.5%;
 }
 
 .cell_two_thirds {
@@ -247,12 +265,6 @@ tr:last-child td {
   display: block;
   box-sizing: border-box;
   flex-basis: 75%;
-}
-
-.cell_three_eights {
-  display: block;
-  box-sizing: border-box;
-  flex-basis: 37.5%;
 }
 
 .cell_full {
@@ -299,8 +311,9 @@ tr:last-child td {
 	width: 100%;
 	z-index:0;
 }
-		
+
 /************************************************************************/
+
 section {
   display: flex;
   padding: 2.1rem;
@@ -348,6 +361,12 @@ p {
   text-transform: uppercase;
   margin-bottom: 1rem;
   line-height: 1.2rem;
+}
+
+@media print {
+  .page-break {
+    page-break-before: always;
+  }
 }
 
 /************************************************************************/
@@ -439,7 +458,7 @@ img.quote {
 
 .history {
   width: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
   page-break-inside: avoid;
 }
 
