@@ -25,6 +25,7 @@ main {
 @media (max-width: 660px), print {
   main {
     margin: 0;
+	box-shadow: none !important;
   }
 }
 
@@ -110,14 +111,14 @@ header > .right {
 
 .header-name {
   color: #3863a0;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 700;
   text-transform: uppercase;
 }
 
 .header-title {
   color: #606060;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -697,3 +698,98 @@ footer time {
 }
 
 /************************************************************************/
+
+.my_section {
+  display: block;
+  box-sizing: border-box;
+  flex-basis: 100%;
+  padding-top: 0rem;
+  padding-bottom: 1.5rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.my_section_title {
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  line-height: 1.2rem;
+}
+
+.my_section_subtitle {
+  color: #3863a0;
+  font-weight: bold;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.my_section_subtitle.first {
+  padding-top: 0rem;       /* override only the first */
+}
+
+.my_content_subtitle {
+  color: #404040;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  text-decoration: underline;
+}
+
+.my_content_subtitle.first {
+  padding-top: 0rem;       /* override only the first */
+}
+
+.my_border_top {
+  border-top: 2px solid #b0b0b0;
+  padding-bottom: 1rem;
+}
+
+ul.my_bulleted {
+  margin-left: 17px;
+  list-style: disc;
+  line-height: 1.2rem;
+}
+
+ul.my_bulleted > li {
+  padding-bottom: 0.19rem;
+}
+
+ul.my_bulleted > li:last-child {
+  padding-bottom: 0rem;
+}
+
+@media print {
+@page {
+  margin: 0.75in; /* sets all margins to 0.75 inch */
+}
+
+header {
+  padding-top: 0rem;
+}
+
+header,
+.my_section {
+  padding-left: 0rem;
+  padding-right: 0rem;
+}
+
+.header_three_eights {
+  margin-left: 0rem !important;
+}
+
+.header_quarter {
+  margin-left: 1.5rem !important;
+}
+
+.no-print-padding {
+  padding-bottom: 0rem !important;
+}
+
+.my_section_subtitle,
+.my_content_subtitle {
+    color: #000000;
+}
+
+footer {
+  padding-bottom: 0rem;
+}
+}
