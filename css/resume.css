@@ -221,10 +221,22 @@ tr:last-child td {
   flex-basis: 12.5%;
 }
 
+.cell_twenty {
+  display: block;
+  box-sizing: border-box;
+  flex-basis: 20%;
+}
+
 .cell_quarter {
   display: block;
   box-sizing: border-box;
   flex-basis: 25%;
+}
+
+.cell_thirty {
+  display: block;
+  box-sizing: border-box;
+  flex-basis: 30%;
 }
 
 .cell_third {
@@ -757,6 +769,30 @@ ul.my_bulleted > li:last-child {
   padding-bottom: 0rem;
 }
 
+.header_left {
+  display: block;
+  box-sizing: border-box;
+  flex-basis: 40%;
+  padding: 0rem;
+  margin-left: 1rem
+}
+
+.header_middle {
+  display: block;
+  box-sizing: border-box;
+  flex-basis: 25%;
+  padding: 0rem;
+  margin-left: 2rem
+}
+
+.header_right {
+  display: block;
+  box-sizing: border-box;
+  flex-basis: 25%;
+  padding: 0rem;
+  margin-left: 2rem
+}
+
 @media print {
 @page {
   margin: 0.75in; /* sets all margins to 0.75 inch */
@@ -772,12 +808,17 @@ header,
   padding-right: 0rem;
 }
 
-.header_three_eights {
+.header_left {
   margin-left: 0rem !important;
 }
 
-.header_quarter {
-  margin-left: 1.5rem !important;
+.header_middle {
+  margin-left: 1rem !important;
+}
+
+.header_right {
+  margin-left: 1.8rem !important;
+  flex-basis: 28% !important;
 }
 
 .no-print-padding {
