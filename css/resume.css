@@ -795,7 +795,7 @@ ul.my_bulleted > li:last-child {
 
 @media print {
 @page {
-  margin: 0.75in; /* sets all margins to 0.75 inch */
+  margin: 18mm; /* sets all margins to 0.75 inch */
 }
 
 header {
