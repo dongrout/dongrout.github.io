@@ -3,6 +3,7 @@
 body {
   background: #365d97;
   color: #404040;
+  /* font-family: 'Inter', Lato, Arial, Helvetica, sans-serif; */
   font-family: Lato, Arial, Helvetica, sans-serif;
 }
 @media (max-width: 660px), print {
@@ -795,7 +796,7 @@ ul.my_bulleted > li:last-child {
 
 @media print {
 @page {
-  margin: 18mm; /* sets all margins to 0.75 inch */
+  margin: 16mm; /* sets all margins to 0.75 inch */
 }
 
 header {
