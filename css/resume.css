@@ -471,6 +471,10 @@ img.quote {
 
 /************************************************************************/
 
+.history_container {
+  padding-bottom: 1rem;
+}
+
 .history {
   width: 100%;
   margin-bottom: 0.8rem;
@@ -495,7 +499,7 @@ img.quote {
 .history-dates {
   font-size: 14px;
   text-align: right;
-  vertical-align: middle;
+  vertical-align: bottom;
   padding: 0px;
 }
 
@@ -609,8 +613,8 @@ a {
 /************************************************************************/
 
 footer {
-  padding-left: 2.1rem;
-  padding-right: 2.1rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
   padding-bottom: 1rem;
 }
 @media (max-width: 930px) {
@@ -833,5 +837,7 @@ header,
 
 footer {
   padding-bottom: 0rem;
+  padding-left: 0rem;
+  padding-right: 0rem;
 }
 }
