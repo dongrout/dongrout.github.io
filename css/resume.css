@@ -509,6 +509,7 @@ img.quote {
   text-align: left;
   vertical-align: top;
   padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .history-dates {
