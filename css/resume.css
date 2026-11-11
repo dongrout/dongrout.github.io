@@ -488,12 +488,13 @@ img.quote {
 
 .history_container {
   padding-bottom: 1rem;
+  page-break-inside: auto !important;
+  break-inside: auto !important;
 }
 
 .history {
   width: 100%;
   margin-bottom: 0.8rem;
-  page-break-inside: avoid;
 }
 
 .history-title {
@@ -521,6 +522,14 @@ img.quote {
 
 .history-dates p {
   line-height: 1rem;
+}
+
+@media print {
+.history-description {
+  display: block;
+  page-break-inside: auto;
+  break-inside: auto;
+}
 }
 
 /************************************************************************/
@@ -641,9 +650,18 @@ footer {
 }
 @media (max-width: 660px), print {
   footer {
+    margin-top: auto;
     padding-left: 0.7rem;
     padding-right: 0.7rem;
   }
+}
+
+@media print {
+    .last-page {
+        display: flex;
+        flex-direction: column;
+        min-height: 9.75in; /* Adjust for printable page height */
+    }
 }
 
 footer > .alignleft {
@@ -809,9 +827,9 @@ ul.my_bulleted > li:last-child {
 .header_right {
   display: block;
   box-sizing: border-box;
-  flex-basis: 25%;
+  flex-basis: 27%;
   padding: 0rem;
-  margin-left: 2rem
+  margin-left: 1.1rem
 }
 
 @media print {
@@ -838,8 +856,8 @@ header,
 }
 
 .header_right {
-  margin-left: 1.8rem !important;
-  flex-basis: 28% !important;
+  margin-left: 0.3rem !important;
+  flex-basis: 32% !important;
 }
 
 .no-print-padding {
